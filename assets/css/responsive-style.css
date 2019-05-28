@@ -69,6 +69,10 @@ h1 {
     margin-bottom: 3%;
 }
 
+.content {
+    height: fit-content;
+    background-color:#ffffff;
+}
 #header {
     height:50px;
     background-color:#4aaaa5;
@@ -77,6 +81,12 @@ h1 {
 #selfPortrait {
     height:30%;
     width:100%;
+}
+
+#mainContent {
+    background-image:url('../images/crossline-lines.png');
+    padding-top:8px;
+    padding-bottom:8px;
 }
 
 /*
