@@ -29,7 +29,7 @@ p {
 }
 
 .nav {
-    float:right;
+    display:block;
     padding:3%;
 }
 

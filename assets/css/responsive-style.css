@@ -46,8 +46,13 @@ h1 {
     font-size:30px;
 }
 
+
+.headerContainer {
+    height:50px;
+}
+
 .logo {
-    float:left;
+    text-align:center;
     margin:0;
     background-color:#4aaaa5;
     color: #ffffff;
@@ -58,100 +63,71 @@ h1 {
     padding:2%;
 }
 
-/* remember to change this*/
-.nav {
-    display:none;
-}
-
 .contentHeader {
     color:#4aaaa5;
     margin-top: 2%;
     margin-bottom: 3%;
 }
 
+/*hide the main nav on smaller screens*/
+.nav {
+    display:none;
+}
+
+/*originally show smaller screen nav*/
+.smallerNav {
+    height:35px;
+    background-color: #ffffff;
+    text-align:center;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.smallerNav a {
+    text-decoration: none;
+}
+
+.portfolio, .about, .contact {
+    color:#c0c2c4;
+}
+
+.portfolio {
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.about {
+    padding-right: 23px;
+    border-right: solid 1px #c0c2c4;
+}
+
+.contact {
+    padding-left: 23px;
+    border-left: solid 1px #c0c2c4;
+}
+
+/* ********************************** */
+
 .content {
     height: fit-content;
     background-color:#ffffff;
 }
-#header {
-    height:50px;
-    background-color:#4aaaa5;
-}
-
-#selfPortrait {
-    height:30%;
-    width:100%;
-}
-
-#mainContent {
-    background-image:url('../images/crossline-lines.png');
-    padding-top:8px;
-    padding-bottom:8px;
-}
-
-/*
-p {
-    font-size: 18px;
-}
-
-.logo {
-    float:left;
-    margin:0;
-    background-color:#4aaaa5;
-    color: #ffffff;
-    height:72px;
-}
-
-.nav {
-    float:right;
-    padding:3%;
-}
-
-.nav a {
-    text-decoration: none;
-}
-
-.contact, .portfolio {
-    margin-left:15px;
-}
-
-.about, .portfolio {
-    padding-right:15px;
-    border-right: solid 0.5px #c0c2c4;
-}
-
-.logo, .content {
-    padding:2%;
-}
-
-.content {
-    height:fit-content;
-    background-color:#ffffff;
-}
-
-.contentHeader {
-    margin-top:0;
-    font-size: 30px;
-    color:#4aaaa5;
-}
 
 .flexContainer {
     display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-wrap:wrap;
     justify-content: center;
-    width:75%;
-    margin: 0 auto;
+    width:90%;
+    margin:0 auto;
 }
 
 .flexItem {
-    height:200px;
+    height:250px;
     margin:2%;
-    background-color:black;
 }
 
 .box1, .box2, .box3, .box4, .box5 {
-    flex-basis:40%;
+    flex-basis:100%;
     position:relative;
     background-size:cover;
     background-position:center;
@@ -182,14 +158,12 @@ p {
     bottom: 0;
     background-color: #4aaaa5;
     width: 100%;
-    height: 15%;
+    height: fit-content;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: #ffffff;
-}
-
-.portfolioContent {
-    height: 800px;
+    margin-bottom: 10px
 }
 
 .info {
@@ -224,30 +198,29 @@ p {
 }
 
 #header {
-    background-color:#ffffff;
-    height:74px;
-    border-bottom:solid 2px #c0c2c4;
-}
-
-#mainContent {
-    height:fit-content;
-    background-image:url('../images/crossline-lines.png');
-    padding-top:30px;
-    padding-bottom:30px;
-    border-bottom: solid 4px #4aaaa5;
+    height:50px;
+    background-color:#4aaaa5;
 }
 
 #selfPortrait {
-    width: 250px;
-    height: 200px;
-    float:left;
-    margin-right:15px;
+    height:30%;
+    width:100%;
+}
+
+#mainContent {
+    height:100%;
+    background-image:url('../images/crossline-lines.png');
+    padding-top:8px;
+    padding-bottom:8px;
+    margin-top:40px; /*leave room on smaller screens for nav*/
+    border-bottom: solid 4px #4aaaa5;
 }
 
 #footer {
+
+    width:100%;
     height:150px;
     background-color:#666666;
-
 }
 
 #footer p {
@@ -257,4 +230,84 @@ p {
     font-size:14px;
     padding-top:30px;
 }
-*/
+
+@media (min-width:768px) {
+    .logo {
+        float:left;
+        margin:0;
+        background-color:#4aaaa5;
+        color: #ffffff;
+        height:72px;
+        padding:20px;
+    }
+
+    #header {
+        background-color:#ffffff;
+        height:74px;
+        border-bottom:solid 2px #c0c2c4;
+    }
+
+    .smallerNav {
+        display:none;
+    }
+
+    .nav {
+        display:block;
+        float:right;
+        padding-top:27px;
+        padding-bottom:27px;
+    }
+
+    .nav a {
+        text-decoration: none;
+    }
+
+    .portfolio {
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .about {
+        padding-right:20px;
+    }
+
+    .contact {
+        padding-left:20px;
+    }
+
+    .flexItem {
+        width: 275px;
+        height: 200px;  
+    }
+
+    .box1, .box2, .box3, .box4, .box5 {
+        flex-basis:40%;
+    }
+
+    #mainContent {
+        margin-top:0;
+        padding-top: 20px;
+        padding-bottom:20px;
+    }
+
+    #selfPortrait {
+        width: 250px;
+        height:200px;
+        float:left;
+        margin-right:15px;
+    }
+
+}
+
+@media (min-width:980px) {
+
+    p {
+        font-size:18px;
+    }
+
+    #mainContent {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+}
