@@ -216,9 +216,10 @@ h1 {
     border-bottom: solid 4px #4aaaa5;
 }
 
+.push {
+    height: 100px;
+}
 #footer {
-
-    width:100%;
     height:150px;
     background-color:#666666;
 }
