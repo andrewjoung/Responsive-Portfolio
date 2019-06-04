@@ -138,7 +138,7 @@ h1 {
 }
 
 .box2 {
-    background-image:url("../images/image2.jpg");
+    background-image:url("../images/starwars-background.jpeg");
 }
 
 .box3 {
@@ -298,7 +298,7 @@ h1 {
         margin-right:15px;
     }
 
-    #wordGuess:hover {
+    #wordGuess:hover, #starwars:hover {
         background-color: #14a4ea;
         border:1px solid #ffffff;
     }
