@@ -142,7 +142,7 @@ h1 {
 }
 
 .box3 {
-    background-image:url("../images/image3.jpg");
+    background-image:url("../images/trivia-background.jpg");
 }
 
 .box4 {
@@ -298,7 +298,7 @@ h1 {
         margin-right:15px;
     }
 
-    #wordGuess:hover, #starwars:hover {
+    #wordGuess:hover, #starwars:hover, #trivia:hover {
         background-color: #14a4ea;
         border:1px solid #ffffff;
     }
