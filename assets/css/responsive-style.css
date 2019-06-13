@@ -151,7 +151,7 @@ h1 {
 }
 
 .box5 {
-    background-image:url("../images/image5.jpg");
+    background-image:url("../images/train-background.jpg");
 }
 
 .imageText {
@@ -299,7 +299,7 @@ h1 {
         margin-right:15px;
     }
 
-    #wordGuess:hover, #starwars:hover, #trivia:hover, #gif:hover {
+    #wordGuess:hover, #starwars:hover, #trivia:hover, #gif:hover, #train:hover {
         background-color: #14a4ea;
         border:1px solid #ffffff;
     }
